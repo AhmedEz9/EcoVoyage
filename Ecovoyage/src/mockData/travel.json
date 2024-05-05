@@ -1,0 +1,35 @@
+ [
+    {
+      "id": 1,
+      "name": "Relaxing Beach Getaway",
+      "destination": "Maldives",
+      "duration": "7 days",
+      "price": 2000,
+      "description": "Escape to the picturesque beaches of the Maldives and indulge in a week of relaxation and luxury. Enjoy snorkeling, spa treatments, and breathtaking sunsets."
+    },
+    {
+      "id": 2,
+      "name": "Cultural Adventure in Japan",
+      "destination": "Japan",
+      "duration": "10 days",
+      "price": 2500,
+      "description": "Experience the rich culture and tradition of Japan on this 10-day adventure. Visit historic temples, explore bustling cities, and sample delicious Japanese cuisine."
+    },
+    {
+      "id": 3,
+      "name": "Safari Expedition in Africa",
+      "destination": "Kenya & Tanzania",
+      "duration": "14 days",
+      "price": 3000,
+      "description": "Embark on a thrilling safari adventure through the savannas of Kenya and Tanzania. Witness the majestic wildlife including lions, elephants, and giraffes, and stay in luxurious safari lodges."
+    },
+    {
+      "id": 4,
+      "name": "European Grand Tour",
+      "destination": "Europe (Multiple Countries)",
+      "duration": "21 days",
+      "price": 4000,
+      "description": "Explore the best of Europe on this epic 3-week tour. Visit iconic landmarks in cities like Paris, Rome, and London, and immerse yourself in the diverse cultures and cuisines of Europe."
+    }
+  ]
+  
