@@ -24,7 +24,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.jsm.EcoVoyage"
+      "package": "com.jsm.EcoVoyage",
+      "permissions": ["android.permission.DETECT_SCREEN_CAPTURE"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
