@@ -1,4 +1,7 @@
 import { ScrollView, StyleSheet, Text, View, Image } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import {primary, secondary_100} from '../commonStyles/colors'
 import spacing from '../commonStyles/Spacing';
 
@@ -8,7 +11,7 @@ import typography from '../commonStyles/Typography';
 import { useGlobalContext } from "../../context/GlobalProvider";
 
 
-export default function FrontPage() {
+export default function FrontPage( { navigation }) {
   //const { isLoading, isLoggedIn } = useGlobalContext();
 
   //if (!isLoading && isLoggedIn) return <Redirect href="/home" />;
@@ -42,7 +45,7 @@ export default function FrontPage() {
               />
             </View>
             <CustomButton style={{...spacing.mb1}} title='Continue with Email'/>
-            <CustomButton title='Continue As A Guest'/>
+            <CustomButton title='Continue As A Guest' onPress={() => navigation.navigate('Home Page')}/>
             
           </View>
           
