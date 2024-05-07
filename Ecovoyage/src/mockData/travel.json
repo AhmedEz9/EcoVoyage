@@ -1,35 +1,122 @@
- [
-    {
+[
+  {
       "id": 1,
       "name": "Relaxing Beach Getaway",
       "destination": "Maldives",
       "duration": "7 days",
       "price": 2000,
       "description": "Escape to the picturesque beaches of the Maldives and indulge in a week of relaxation and luxury. Enjoy snorkeling, spa treatments, and breathtaking sunsets."
-    },
-    {
+  },
+  {
       "id": 2,
       "name": "Cultural Adventure in Japan",
       "destination": "Japan",
       "duration": "10 days",
       "price": 2500,
       "description": "Experience the rich culture and tradition of Japan on this 10-day adventure. Visit historic temples, explore bustling cities, and sample delicious Japanese cuisine."
-    },
-    {
+  },
+  {
       "id": 3,
       "name": "Safari Expedition in Africa",
       "destination": "Kenya & Tanzania",
       "duration": "14 days",
       "price": 3000,
       "description": "Embark on a thrilling safari adventure through the savannas of Kenya and Tanzania. Witness the majestic wildlife including lions, elephants, and giraffes, and stay in luxurious safari lodges."
-    },
-    {
+  },
+  {
       "id": 4,
       "name": "European Grand Tour",
       "destination": "Europe (Multiple Countries)",
       "duration": "21 days",
       "price": 4000,
       "description": "Explore the best of Europe on this epic 3-week tour. Visit iconic landmarks in cities like Paris, Rome, and London, and immerse yourself in the diverse cultures and cuisines of Europe."
-    }
-  ]
-  
+  },
+  {
+      "id": 5,
+      "name": "Mystical Adventure in Peru",
+      "destination": "Peru",
+      "duration": "12 days",
+      "price": 1500,
+      "description": "Discover the mystical wonders of Peru on this 12-day adventure. Explore ancient Inca ruins, hike the majestic Andes Mountains, and experience the vibrant culture of Peru."
+  },
+  {
+      "id": 6,
+      "name": "Tropical Paradise in Thailand",
+      "destination": "Thailand",
+      "duration": "9 days",
+      "price": 1800,
+      "description": "Escape to the tropical paradise of Thailand on this 9-day journey. Relax on stunning beaches, explore bustling markets, and indulge in delicious Thai cuisine."
+  },
+  {
+      "id": 7,
+      "name": "Adventure in New Zealand",
+      "destination": "New Zealand",
+      "duration": "14 days",
+      "price": 5000,
+      "description": "Embark on an adrenaline-fueled adventure in New Zealand. Experience bungee jumping, skydiving, and hiking in the breathtaking landscapes of this beautiful country."
+  },
+  {
+      "id": 8,
+      "name": "Historical Tour of Egypt",
+      "destination": "Egypt",
+      "duration": "10 days",
+      "price": 2800,
+      "description": "Journey through the ancient wonders of Egypt on this historical tour. Explore the pyramids of Giza, cruise the Nile River, and discover the treasures of ancient Egyptian civilization."
+  },
+  {
+      "id": 9,
+      "name": "City Exploration in USA",
+      "destination": "United States (Multiple Cities)",
+      "duration": "14 days",
+      "price": 3500,
+      "description": "Discover the vibrant cities of the United States on this 2-week adventure. Explore iconic landmarks, dine at world-class restaurants, and experience the diverse cultures of America."
+  },
+  {
+      "id": 10,
+      "name": "Island Hopping in Greece",
+      "destination": "Greece (Multiple Islands)",
+      "duration": "10 days",
+      "price": 3000,
+      "description": "Sail through the crystal-clear waters of the Greek Islands on this 10-day island hopping adventure. Explore ancient ruins, swim in secluded beaches, and immerse yourself in Greek hospitality."
+  },
+  {
+      "id": 11,
+      "name": "Scenic Road Trip in California",
+      "destination": "California, USA",
+      "duration": "7 days",
+      "price": 400,
+      "description": "Embark on a scenic road trip along the breathtaking coast of California. Explore charming coastal towns, visit iconic landmarks like the Golden Gate Bridge, and enjoy stunning ocean views."
+  },
+  {
+      "id": 12,
+      "name": "Cultural Exploration in India",
+      "destination": "India",
+      "duration": "12 days",
+      "price": 900,
+      "description": "Immerse yourself in the vibrant culture of India on this 12-day cultural exploration. Visit ancient temples, bustling markets, and experience traditional Indian festivals."
+  },
+  {
+      "id": 13,
+      "name": "Relaxing Retreat in Bali",
+      "destination": "Bali, Indonesia",
+      "duration": "7 days",
+      "price": 600,
+      "description": "Indulge in a relaxing retreat on the beautiful island of Bali. Unwind with yoga sessions, spa treatments, and explore the lush landscapes and pristine beaches of Bali."
+  },
+  {
+      "id": 14,
+      "name": "Adventure in Costa Rica",
+      "destination": "Costa Rica",
+      "duration": "10 days",
+      "price": 1200,
+      "description": "Embark on an adventure-filled journey through the rainforests and beaches of Costa Rica. Experience zip-lining, surfing, and wildlife spotting in this eco-friendly paradise."
+  },
+  {
+      "id": 15,
+      "name": "Cruise to the Caribbean Islands",
+      "destination": "Caribbean",
+      "duration": "7 days",
+      "price": 450,
+      "description": "Set sail on a luxurious cruise to the Caribbean Islands. Relax on pristine beaches, snorkel in crystal-clear waters, and enjoy the vibrant nightlife of the Caribbean."
+  }
+]

@@ -1,23 +1,22 @@
-import React, { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import TextInputComponent from './src/components/textInputComponent';
+import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import FrontPage from './src/views/frontPage';
+
+const Stack = createNativeStackNavigator();
 
 
 export default function App() {
 
   return (
-    <View style={styles.container}>
-      <TextInputComponent/>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Front Page"
+          component={FrontPage}
+        />
+        
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'column',
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

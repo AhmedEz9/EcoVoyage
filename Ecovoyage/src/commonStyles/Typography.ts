@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { TEXT_BODY, MAIN_color1, ACTION, WARNING } from './colors';
+import { white, MAIN_color1, ACTION, WARNING } from './colors';
 
 const FONTS = {
   Regular: 'Nunito',
@@ -9,7 +9,7 @@ const FONTS = {
 
 const baseStyle = StyleSheet.create({
   text: {
-    color: TEXT_BODY,
+    color: white,
     fontFamily: FONTS.Regular,
     fontSize: 14,
   },
@@ -19,13 +19,15 @@ const typography = StyleSheet.create({
   h1: {
     ...baseStyle.text,
     fontFamily: FONTS.Bold,
+    fontWeight:'600',
     fontSize: 40,
-    color: MAIN_color1,
+    color: white,
     textAlign: 'center',
   },
   h2: {
     ...baseStyle.text,
     fontFamily: FONTS.Bold,
+    fontWeight:'600',
     fontSize: 30,
     textAlign: 'center',
   },

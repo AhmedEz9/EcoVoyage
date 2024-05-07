@@ -1,18 +1,16 @@
-import React from 'react';
-import { View, Text, StyleProp, ViewStyle, TextInput } from 'react-native';
-import { useState } from 'react';
-import { FlatList, TouchableOpacity, StyleSheet } from 'react-native';
-import { useNavigation } from '@react-navigation/native'; // Assuming you're using React Navigation
+import { View, Text, StyleSheet } from 'react-native'
+import React from 'react'
+import { TextInputComponent } from '../../components/textInputComponent'
 
+export default function Home () {
+  const travelPackages = require('../../assets/travel.json');
 
-const travelPackages = require('../mockData/travel.json');
+// interface SearchProps {
+//   input: string;
+//   style?: StyleProp<ViewStyle>;
+// }
 
-interface SearchProps {
-  input: string;
-  style?: StyleProp<ViewStyle>;
-}
-
-const SearchComponent: React.FC<SearchProps> = ({ input, style }) => {
+const SearchComponent = ({ input, style }) => {
   //const navigation = useNavigation();
 
   const handleSearch = () => {
@@ -64,4 +62,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SearchComponent;
+}
