@@ -1,9 +1,8 @@
 import React from 'react';
-import { View, Text, StyleProp, ViewStyle, TextInput } from 'react-native';
-import { useState } from 'react';
+import { View, Text, StyleProp, ViewStyle } from 'react-native';
 import { FlatList, TouchableOpacity, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native'; // Assuming you're using React Navigation
-
+import { useData } from './DataContext';
 
 const travelPackages = require('../mockData/travel.json');
 
@@ -13,7 +12,8 @@ interface SearchProps {
 }
 
 const SearchComponent: React.FC<SearchProps> = ({ input, style }) => {
-  //const navigation = useNavigation();
+  const navigation = useNavigation();
+  const { setId } = useData();
 
   const handleSearch = () => {
     // Filter travel packages based on the entered price
@@ -24,17 +24,18 @@ const SearchComponent: React.FC<SearchProps> = ({ input, style }) => {
 
   const renderItem = ({ item }) => {
     return (
-      <TouchableOpacity style={styles.itemContainer} onPress={() => handlePressItem(item)}>
+      <TouchableOpacity style={styles.itemContainer} onPress={() => handlePressItem(item.id)}>
         <Text style={styles.itemName}>{item.name}</Text>
         <Text style={styles.itemDestination}>{item.destination}</Text>
       </TouchableOpacity>
     );
   };
 
-  // const handlePressItem = (travelPackage) => {
-  //   // Navigate to the details page with the selected travel package
-  //   navigation.navigate('DetailsPage', { package: travelPackage });
-  // };
+  const handlePressItem = (id: string) => {
+    // Navigate to the details page with the selected travel package
+    navigation.navigate('Details Page');
+    setId(id);
+  };
 
   return (
     <View >

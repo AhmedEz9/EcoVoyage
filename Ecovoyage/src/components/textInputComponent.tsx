@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {SafeAreaView, StyleSheet, TextInput, View,StyleProp, ViewStyle,Button, TouchableOpacity } from 'react-native';
+import { StyleSheet, TextInput, View,StyleProp, ViewStyle, TouchableOpacity } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import SearchComponent from './searchComponent';
 import spacing from '../commonStyles/Spacing';
@@ -15,7 +15,6 @@ const TextInputComponent: React.FC<TextInputComponentProps> = ({ style })=> {
   const [input, setInput] = useState('');
   const handleInput = ()=> {
     setInput(inputText);
-
   };
 
 

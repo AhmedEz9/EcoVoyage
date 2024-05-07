@@ -1,12 +1,9 @@
-import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native'
+import { View, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { primary } from '../commonStyles/colors';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import TextInputComponent from '../components/textInputComponent';
-//import { TextInputComponent } from '../components/textInputComponent'
-
 export default function HomePage () {
-  const travelPackages = require('../../assets/travel.json');
   return (
     <View style={styles.container}>
       <View style={styles.menuContainer}>
