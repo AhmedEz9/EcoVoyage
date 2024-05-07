@@ -15,6 +15,7 @@ export default function App() {
         <Stack.Screen
           name="Front Page"
           component={FrontPage}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="Home Page"

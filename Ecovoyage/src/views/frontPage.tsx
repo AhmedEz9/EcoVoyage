@@ -20,12 +20,12 @@ export default function FrontPage( { navigation }) {
     <View style={styles.container}>
       <ScrollView>
         <View>
-          <Text style={{...spacing.mt4, ...typography.h1}}>EcoVoyage</Text>
+          <Text style={{...spacing.mt6, ...typography.h1}}>EcoVoyage</Text>
 
           <Image 
           source={images.cards} 
           resizeMode="contain" 
-          style={styles.mainImage}
+          style={{...styles.mainImage, ...spacing.mt3}}
           />
           <View style={{padding:0, margin:0}}>
             <Text style={{...typography.h2}} >
