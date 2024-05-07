@@ -8,7 +8,7 @@ import {
   ViewStyle,
   DimensionValue,
 } from 'react-native';
-import { secondary } from '../commonStyles/colors';
+import { primary, secondary, secondary_100 } from '../commonStyles/colors';
 import typography from '../commonStyles/Typography';
 
 interface MainButtonProps {
@@ -41,11 +41,10 @@ const CustomButton = ({
           styles.button,
           background,
           !inline ? { width: '100%' } : null,
-          !enabled ? styles.disabled : null,
           noPadding ? { paddingHorizontal: 0, paddingVertical: 0 } : null,
         ]}
         onPress={() => (enabled && onPress ? onPress() : null)}>
-          <Text>{title}</Text>
+          <Text style={styles.text}>{title}</Text>
       </TouchableOpacity>
     </View>
   );
@@ -66,40 +65,18 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 15,
     borderRadius: 10,
+    width: '80%',
     justifyContent: 'center',
-  },
-  small: {
-    paddingVertical: 8,
-    paddingHorizontal: 16,
-    borderRadius: 5,
-  },
-  smallText: {
-    fontSize: 14,
   },
   children: {
     justifyContent: 'center',
   },
   text: {
     ...typography.h3,
-    color: '#fff',
+    color: primary,
+    fontWeight: '500'
   },
   secondary: {
     backgroundColor: secondary,
-  },
-  disabled: {
-    backgroundColor: '#cecece',
-  },
-  icon: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: 26,
-    height: 26,
-  },
-  iconSmall: {
-    width: 19,
-    height: 19,
-  },
-  round: {
-    borderRadius: 1000,
   },
 });
