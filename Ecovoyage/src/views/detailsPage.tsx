@@ -1,8 +1,9 @@
-import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, FlatList, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
 import { primary } from '../commonStyles/colors';
 import typography from '../commonStyles/Typography';
 import { useData } from '../components/DataContext';
+import spacing from '../commonStyles/Spacing';
 
 export default function DetailsPage () {
   const travelPackages = require('../../assets/travel.json');
@@ -19,11 +20,13 @@ export default function DetailsPage () {
 
   return (
     <View style={styles.container}>
-      <Text style={{...typography.actionColor}} >{packageDetails.name}</Text>
-      <Text >{packageDetails.destination}</Text>
-      <Text >{packageDetails.duration}</Text>
-      <Text >{packageDetails.description}</Text>
-      <Text >Price: €{packageDetails.price}</Text>
+      <ScrollView style={{...spacing.mt6}}>
+      <Text style={{...typography.h3, ...spacing.ma1}}>{packageDetails.name}</Text>
+      <Text style={{...typography.h3, ...spacing.ma1}}>{packageDetails.destination}</Text>
+      <Text style={{...typography.h3, ...spacing.ma1}}>{packageDetails.duration}</Text>
+      <Text style={{...typography.h3, ...spacing.ma1}}>{packageDetails.description}</Text>
+      <Text style={{...typography.h3, ...spacing.ma1}}>Price: €{packageDetails.price}</Text>
+      </ScrollView>
     </View>
   );
 };
@@ -32,9 +35,8 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: primary,
     flex: 1,
-  },
-  menuContainer: {
-    alignItems:'flex-end',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   itemContainer: {
     padding: 10,

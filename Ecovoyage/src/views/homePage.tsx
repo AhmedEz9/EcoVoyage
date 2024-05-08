@@ -3,7 +3,7 @@ import React from 'react'
 import { primary } from '../commonStyles/colors';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import TextInputComponent from '../components/textInputComponent';
-export default function HomePage () {
+export default function HomePage ({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.menuContainer}>
@@ -13,6 +13,7 @@ export default function HomePage () {
           style={[
             styles.button,
           ]}
+          onPress={() => navigation.navigate('Profile Page')}
           >
             <AntDesign name="profile" size={40} color="white" />
         </TouchableOpacity>

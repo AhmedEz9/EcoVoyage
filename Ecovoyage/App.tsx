@@ -5,6 +5,7 @@ import FrontPage from './src/views/frontPage';
 import HomePage from './src/views/homePage';
 import DetailsPage from './src/views/detailsPage';
 import { DataProvider } from './src/components/DataContext';
+import ProfilePage from './src/views/profilePage';
 
 
 const Stack = createNativeStackNavigator();
@@ -29,6 +30,10 @@ export default function App() {
           <Stack.Screen
             name="Details Page"
             component={DetailsPage}
+          />
+          <Stack.Screen
+            name="Profile Page"
+            component={ProfilePage}
           />
         </Stack.Navigator>
       </DataProvider>
